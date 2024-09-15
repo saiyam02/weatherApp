@@ -34,10 +34,11 @@ Before running this application, make sure you have the following installed:
     ```bash
     touch .env
 
-Add your OpenWeatherMap API key to the .env file:
-REACT_APP_WEATHER_API_KEY=your_api_key_here    
-Note: Replace your_api_key_here with your actual API key from OpenWeatherMap.
+    Add your OpenWeatherMap API key to the .env file:
+    REACT_APP_WEATHER_API_KEY=your_api_key_here    
+    Note: Replace your_api_key_here with your actual API key from OpenWeatherMap.
 4. **Run the development server**:
     ```bash
     npm start
+
 The app will be available at http://localhost:3000.
