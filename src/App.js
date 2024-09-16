@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from 'react';
+import React,{ useCallback, useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios';
 import CurrentWeather from './components/CurrentWeather';
@@ -15,7 +15,7 @@ function App() {
 
   const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
 
-  const fetchWeather = async (city) => {
+  const fetchWeather = useCallback(async (city) => {
     setLoading(true);
     setError('');
     try {
@@ -40,7 +40,7 @@ function App() {
     } finally {
       setLoading(false);
     }
-  };
+  },[unit,apiKey]);
 
   const toggleUnit = () => {
     setUnit((prevUnit) => (prevUnit === 'metric' ? 'imperial' : 'metric'));
@@ -50,7 +50,7 @@ function App() {
     const cityName = localStorage.getItem('cityName');
     if(cityName)
     fetchWeather(cityName);
-  },[unit])
+  },[fetchWeather])
 
   return (
     <div className="App">
