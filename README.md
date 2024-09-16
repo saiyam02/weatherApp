@@ -9,7 +9,7 @@ A simple weather forecast application built with React.js that allows users to s
 - **Responsive Design**: Fully responsive UI for both mobile and desktop.
 
 ## Demo
-[Hosted Link] - Add the hosted URL here when deployed.
+[Hosted Link] - https://weather-forecast-app-task1.netlify.app/
 
 ---
 
