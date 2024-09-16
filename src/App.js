@@ -50,7 +50,7 @@ function App() {
     const cityName = localStorage.getItem('cityName');
     if(cityName)
     fetchWeather(cityName);
-  },[unit])
+  },[unit,fetchWeather])
 
   return (
     <div className="App">

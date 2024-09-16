@@ -23,7 +23,7 @@ Before running this application, make sure you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/weather-forecast-app.git
+   git clone https://github.com/saiyam02/weatherApp.git
    cd weather-forecast-app
    
 2. **Install the dependencies**:
